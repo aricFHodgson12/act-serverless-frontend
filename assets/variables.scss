@@ -1,0 +1,12 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$select-chips-box-enclosed-selections-min-height: 40px !important;
+$select-chips-dense-selections-min-height: 30px !important;
+$select-chips-selections-padding-top:20px;
+$text-field-label-top: 40px !important;
+$text-field-filled-full-width-label-top: 0px !important;
+$text-field-solo-label-top: calc(10% - 9px) !default;
+

@@ -1,0 +1,9 @@
+.primary_sidebar {
+	@media (min-width: 1264px) {
+		.col-lg-2 {
+		    flex: 0 0 15.6666666667%;
+		    max-width: 15.6666666667%;
+		}	
+
+	}
+}

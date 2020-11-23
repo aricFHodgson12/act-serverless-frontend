@@ -1,0 +1,219 @@
+.navigation-menu {
+	.theme--light.v-app-bar.v-toolbar.v-sheet {
+		background: $primary;
+		color: $text-color;
+
+		.v-toolbar__content {
+			display: block;
+			.row {
+				align-items: center;
+			}
+		}
+	}
+	.theme--light.v-btn {
+		color: $light-text-color;		
+		text-transform: none;
+		font-weight: 400;
+	}
+	.theme--light.v-btn--active {
+		color: #fff;		
+	}	
+	.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined){
+		background: #4D5F7A;
+		color: $text-color;
+		box-shadow: none;
+		font-weight: 400;		
+	}
+
+	.v-list-item__title {
+	}
+	.logo {
+		width: 30px;
+		height: 30px;
+	}
+	.phone-logo {
+		font-size: 30px !important;
+	}
+	.nav_men_items {
+		margin-right: 12px !important;
+		.v-btn__content {
+			font-size: 15px !important;
+		}
+	}
+}
+
+
+.softphone {
+	&__header {
+		.v-list-item__title {
+			padding-top: 0px !important;
+		}
+		.v-input--switch{
+			// margin-top: 0px;
+		}
+		.v-label {
+			color: $grey_shades_5 !important;
+			font-weight: 500;
+			margin-right: 15px;
+			// padding-bottom:10px;
+		}	
+
+		span {
+			padding-bottom: 7px;
+			padding-right: 10px;
+			font-size: 15px;
+			color: $grey_shades_4;
+		}		
+	}
+
+
+	&__pad {
+		display: block;
+		.v-list-item__title {
+			padding-top: 0px !important;
+			padding-bottom: 16px;
+		}
+		.dial_numbers {
+			border-radius: 5px;
+			text-align: center;
+			font-weight: 600;
+			font-size: 16px;
+		}
+
+		&__row {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.s_numbers {
+				padding: 15px 38px;
+				color: $white;
+				border-radius: 28px;
+				// border:1px solid red;
+				cursor: pointer;
+				&:hover {
+					background: $grey_shades_6;
+				}
+			}
+			.s_button {
+				cursor: pointer;
+				padding-right: 25px;
+				padding-left: 25px;
+			}
+		}
+	}
+
+	&__showcalls {
+		margin-top: 15px;
+		width: 100%;
+		height: 60px;
+		background: $bold-primary;
+		display: flex;
+		align-items: center;
+		&__item {
+			margin-left: 35px;
+			cursor: pointer;
+			color: $button;
+			&:hover{
+				color: $white;
+				.v-icon {
+					color: $white !important;
+				}
+			}
+		}
+		&__list {
+			padding-left: 35px;
+			margin: 10px 0px 15px 0px;
+			&__item {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				div{
+					h3 {
+						color: $white;
+						margin-bottom: 5px;
+						font-size: 16px;
+						font-weight: 500;
+					}
+					p {
+						font-size: 14px;
+					}
+				}
+
+			}
+		}
+	}
+
+	.v-list-item {
+		// padding: 0px 32px;
+		.v-list-item__content {
+			padding-top: 0px !important;	
+		}		
+		.v-list-item__title {
+			padding-left: 0px !important;
+		}
+	}
+
+	&__calling {
+		&__pad {
+			padding-top: 24px;
+			padding-bottom: 24px;
+			&__action {
+				cursor: pointer;
+				opacity: 0.2;
+				padding: 20px;
+				p {
+					font-size: 12px;
+					margin-bottom: 0px;
+					margin-top: 3px;
+				}
+			}
+		}
+		&__item{
+			.v-btn {
+				margin-top: 10px;
+				color: $white !important;
+				opacity: 0.6;
+				.v-btn__content {
+					span {
+						margin-left: 5px;
+						font-size: 13px;
+					}
+
+				}
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}		
+	}
+
+}
+
+#announcement {
+	.announcement{
+		height: 50px; 
+		position: fixed; 
+		top: 0;
+		width: 100%;
+		z-index: 8;
+		background: $error;
+		color: $white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 14px;
+		padding: 0 15px;
+		&__text {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			span {
+				margin-left: 15px;
+			}
+		}
+		&__close {
+			cursor: pointer;
+		}
+	}	
+}

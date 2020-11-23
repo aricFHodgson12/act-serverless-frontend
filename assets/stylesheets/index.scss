@@ -1,0 +1,24 @@
+//common
+@import "common/variables";
+@import "common/global";
+@import "common/dropdown";
+@import "common/select";
+@import "common/modal";
+@import "common/table";
+// @import "components/timerange";
+
+//components
+@import "components/custom_profile_menu";
+@import "components/incoming_call";
+@import "components/navigation";
+@import "components/primary_vtab";
+@import "components/audio_tab";
+@import "components/autodialer";
+
+//pages
+@import "pages/login";
+@import "pages/calls";
+@import "pages/setting";
+@import "pages/autodialer";
+
+@import "layout";

@@ -1,0 +1,14 @@
+.timerange {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__item {
+		max-width: 90px;
+		margin: 5px;
+
+	}
+	span {
+		// margin-right: 10px;
+	}
+}

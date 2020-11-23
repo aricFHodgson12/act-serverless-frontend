@@ -1,0 +1,130 @@
+.autodialer_filter {
+	background: $bold-primary;
+	position: relative;
+	height: 160px;
+	p {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	div {
+		text-align: center;
+	}
+	&__time {
+		cursor: pointer;
+		color: $white !important;
+		padding-top: 0px !important;
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+
+		&:hover {
+			border-bottom: 1px dotted $white;
+		}
+	}
+
+	&__contacts {
+		position: absolute;
+		bottom: 10px;
+		width: 100%;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	&__calling {
+		box-shadow: 0px 0px 5px 6px rgba(21, 191, 129,0.85) !important;
+		-webkit-box-shadow: 0px 0px 5px 6px rgba(21, 191, 129,0.85) !important;
+		-moz-box-shadow: 0px 0px 5px 6px rgba(21, 191, 129,0.85) !important;
+
+	}
+}
+
+.autodialer_contact {
+	background: $primary;
+	padding-top: 20px;
+	position: relative;
+	h3 {
+		color: $white;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+		color: $grey_shades_5;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	&::after {
+		position: absolute;
+		content: "";
+		right: -30px;
+		width: 30px;
+		height: 20px;
+		top: 50px;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-left: 15px solid $primary;
+	}
+}
+
+
+.autodialer_stats {
+	background: $bold-primary;
+	padding: 20px;
+	text-align: center;
+	&__bar {
+		text-align: left;
+		margin-top: 20px;
+		p {
+			margin-bottom: 5px !important;
+			color: $grey_shades_5;
+		}
+		.v-icon {
+			color: $grey_shades_5 !important;
+			cursor: pointer;
+		}
+	}
+}
+.autodialer_contact_campaign_right {
+	width: 53%;
+	.autodialer_contact_call_script {
+		padding: 10px 20px;
+		border-radius: 5px;
+		&__notes {
+			cursor: pointer;
+			&:hover {
+				color: $blue !important;
+			}
+		}		
+	}
+
+	.autodialer_contact_notes {
+		padding: 10px 20px;
+		border-radius: 5px;		
+		margin-top: 25px;		
+	}
+}
+
+.autodialer_contact_campaign_left {
+	width: 45%;
+
+	.autodialer_contact_details {
+		
+		padding: 10px 20px;
+		border-radius: 5px;
+		label {
+			font-weight: 500 !important;
+		}
+		.v-input {
+			font-weight: 400 !important;
+		}
+	}	
+
+	.autodialer_contact_tags {
+		margin-top: 25px;
+		border-radius: 5px;
+		padding: 10px 20px;
+	}		
+}

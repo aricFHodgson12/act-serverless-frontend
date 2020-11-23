@@ -1,0 +1,15 @@
+table {
+    width: 120% !important;
+}
+table > tbody > tr > td:last-child, 
+table > thead > tr > th:last-child {
+  position: sticky !important; 
+  position: -webkit-sticky !important; 
+  right: 0; 
+  z-index: 1;
+  background: transparent;
+
+}
+table > thead > tr > th:nth-child(1) {
+  z-index: 9999;
+}
